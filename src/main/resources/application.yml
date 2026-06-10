@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: pethealth
+
+  profiles:
+    active: dev # Cambia a "dev" cuando uses PostgreSQL "local" cuando uses H2
+
+server:
+  port: 8080
