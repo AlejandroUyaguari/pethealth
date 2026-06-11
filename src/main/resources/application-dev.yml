@@ -1,14 +1,22 @@
 spring:
+  application:
+    name: pethealth
+
   datasource:
-    url: jdbc:postgresql://localhost:5432/pethealth
-    username: postgres
-    password: postgres
-    driver-class-name: org.postgresql.Driver
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
 
   jpa:
     hibernate:
       ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
+        format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+server:
+  port: 8080
