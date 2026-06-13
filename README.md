@@ -333,4 +333,4 @@ https://www.linkedin.com/in/alejandro-uyaguari-0807b318/
 alejandro.uyaguari@outlook.cl
 
 👤 **Portafolio GitHub**  
-https://github.com/AlejandroUyaguari/portfolio-nestor-uyaguari
+https://github.com/NestorUyaguari/portfolio
