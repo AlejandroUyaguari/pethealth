@@ -28,18 +28,6 @@ Su principal objetivo es demostrar competencias en diseño de software, modelado
 
 ---
 
-## 🔗 Enlaces
-
-📂 **Repositorio**  
-https://github.com/AlejandroUyaguari/pethealth
-
-📖 **Swagger / OpenAPI**  
-https://pethealth-sa6d.onrender.com/swagger-ui/index.html
-
-> ⚠️ La aplicación está desplegada en Render Free Tier. La primera solicitud puede tardar algunos segundos mientras el servicio se activa.
-
----
-
 ## 🎯 Objetivos del Proyecto
 
 Este proyecto fue desarrollado para demostrar experiencia en:
@@ -246,6 +234,8 @@ La API incluye documentación automática mediante Swagger/OpenAPI.
 ### Swagger Online
 
 https://pethealth-sa6d.onrender.com/swagger-ui/index.html
+
+> ⚠️ La aplicación está desplegada en Render Free Tier. La primera solicitud puede tardar algunos segundos mientras el servicio se activa.
 
 ### Swagger Local
 
