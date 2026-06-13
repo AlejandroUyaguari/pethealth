@@ -5,7 +5,6 @@
 [![Java](https://img.shields.io/badge/Java-21-orange)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-green)](https://spring.io/projects/spring-boot)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)](https://www.postgresql.org/)
-[![H2](https://img.shields.io/badge/H2-Database-lightgrey)](https://www.h2database.com/)
 [![Swagger](https://img.shields.io/badge/OpenAPI-Swagger-success)](https://swagger.io/)
 [![Architecture](https://img.shields.io/badge/Architecture-Clean%20%7C%20Hexagonal-blueviolet)]()
 
@@ -18,7 +17,7 @@
 El proyecto fue construido siguiendo principios de:
 
 - Clean Architecture / Hexagonal Architecture
-- SOLID
+- Principios SOLID
 - Separación de responsabilidades
 - DTO Pattern
 - Validaciones de negocio
@@ -29,12 +28,24 @@ Su principal objetivo es demostrar competencias en diseño de software, modelado
 
 ---
 
+## 🔗 Enlaces
+
+📂 **Repositorio**  
+https://github.com/AlejandroUyaguari/pethealth
+
+📖 **Swagger / OpenAPI**  
+https://pethealth-sa6d.onrender.com/swagger-ui/index.html
+
+> ⚠️ La aplicación está desplegada en Render Free Tier. La primera solicitud puede tardar algunos segundos mientras el servicio se activa.
+
+---
+
 ## 🎯 Objetivos del Proyecto
 
 Este proyecto fue desarrollado para demostrar experiencia en:
 
 - Diseño de APIs REST profesionales
-- Arquitectura Limpia y mantenible
+- Arquitectura limpia y mantenible
 - Modelado de dominio basado en reglas de negocio reales
 - Desarrollo con Spring Boot
 - Persistencia con JPA/Hibernate
@@ -61,12 +72,12 @@ src/main/java
 │
 └── infrastructure
     ├── controller
-    ├── config
-    └── persistence
+    └── config
 ```
 
 ### Domain
-Contiene el núcleo del negocio.
+
+Contiene el núcleo del negocio:
 
 - Entidades
 - Reglas del dominio
@@ -76,7 +87,7 @@ No depende de frameworks externos.
 
 ### Application
 
-Implementa los casos de uso del sistema.
+Implementa los casos de uso del sistema:
 
 - DTOs
 - Servicios
@@ -85,12 +96,11 @@ Implementa los casos de uso del sistema.
 
 ### Infrastructure
 
-Contiene los adaptadores externos.
+Contiene los adaptadores externos:
 
 - Controllers REST
 - Configuración Swagger
-- JPA/Hibernate
-- Persistencia
+- Persistencia con JPA/Hibernate
 - Configuración de perfiles
 
 ---
@@ -103,7 +113,7 @@ El sistema representa la operación de una clínica veterinaria mediante cuatro 
 
 Representa cualquier individuo dentro del sistema.
 
-**Atributos**
+### Atributos
 
 - id
 - nombre
@@ -113,7 +123,7 @@ Representa cualquier individuo dentro del sistema.
 - telefono
 - tipoPersona
 
-Tipos disponibles:
+### Tipos disponibles
 
 - DUENO
 - VETERINARIO
@@ -124,12 +134,12 @@ Tipos disponibles:
 
 Especialización de Persona.
 
-**Información adicional**
+### Información adicional
 
 - especialidad
 - numeroLicencia
 
-Relación:
+### Relación
 
 ```text
 Persona 1 ── 1 Veterinario
@@ -148,7 +158,7 @@ Implementado mediante:
 
 Representa una mascota registrada en la clínica.
 
-**Atributos**
+### Atributos
 
 - id
 - nombre
@@ -156,7 +166,7 @@ Representa una mascota registrada en la clínica.
 - raza
 - fechaNacimiento
 
-Relación:
+### Relación
 
 ```text
 Persona (Dueño) 1 ── N Mascotas
@@ -168,7 +178,7 @@ Persona (Dueño) 1 ── N Mascotas
 
 Registra la atención veterinaria de una mascota.
 
-**Atributos**
+### Atributos
 
 - id
 - fecha
@@ -176,7 +186,7 @@ Registra la atención veterinaria de una mascota.
 - diagnostico
 - costo
 
-Relaciones:
+### Relaciones
 
 ```text
 Mascota 1 ── N Consultas
@@ -196,27 +206,21 @@ Veterinario 1 ── N Consultas
 - Validación de email único
 - Validación de cédula única
 
----
-
-## Gestión de Veterinarios
+### Gestión de Veterinarios
 
 - Crear veterinarios desde una persona existente
 - Asignar especialidad
 - Asignar licencia profesional
 - Mantener integridad Persona ↔ Veterinario
 
----
-
-## Gestión de Mascotas
+### Gestión de Mascotas
 
 - Registro de mascotas
 - Asociación con dueño
 - Consulta y actualización de datos
 - Validación de existencia del propietario
 
----
-
-## Gestión de Consultas Médicas
+### Gestión de Consultas Médicas
 
 - Registro de atenciones veterinarias
 - Asociación con mascota y veterinario
@@ -224,9 +228,7 @@ Veterinario 1 ── N Consultas
 - Registro de costos
 - Historial de consultas
 
----
-
-## Manejo Global de Excepciones
+### Manejo Global de Excepciones
 
 Implementación centralizada de errores mediante:
 
@@ -241,7 +243,11 @@ Respuestas JSON estandarizadas para todos los errores.
 
 La API incluye documentación automática mediante Swagger/OpenAPI.
 
-Una vez ejecutado el proyecto:
+### Swagger Online
+
+https://pethealth-sa6d.onrender.com/swagger-ui/index.html
+
+### Swagger Local
 
 ```text
 http://localhost:8080/swagger-ui.html
@@ -259,7 +265,7 @@ Swagger permite:
 
 # 🛠️ Tecnologías Utilizadas
 
-## Backend
+### Backend
 
 - Java 21
 - Spring Boot 3
@@ -268,22 +274,22 @@ Swagger permite:
 - Hibernate
 - Lombok
 
-## Bases de Datos
+### Bases de Datos
 
-- H2 Database (entorno local)
-- PostgreSQL (desarrollo y producción)
+- PostgreSQL
+- H2 Database
 
-## Documentación
+### Documentación
 
 - OpenAPI 3
 - Swagger UI
 
-## Arquitectura
+### Arquitectura y Diseño
 
 - Clean Architecture
 - Hexagonal Architecture
 - DTO Pattern
-- SOLID Principles
+- Principios SOLID
 
 ---
 
@@ -295,29 +301,20 @@ Swagger permite:
 - Maven 3.9+
 - Git
 
----
-
-## Clonar repositorio
+### Clonar repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/pethealth.git
-```
-
-```bash
+git clone https://github.com/AlejandroUyaguari/pethealth.git
 cd pethealth
 ```
 
----
-
-## Ejecutar aplicación
+### Ejecutar aplicación
 
 ```bash
 mvn spring-boot:run
 ```
 
----
-
-## Compilar proyecto
+### Compilar proyecto
 
 ```bash
 mvn clean install
@@ -342,36 +339,27 @@ mvn clean install
 
 6. Toda la información queda disponible mediante la API REST
 ```
-
----
-
-# 📈 Próximas Mejoras
-
-- Autenticación y autorización con JWT
-- Dockerización completa
-- Tests unitarios y de integración
-- Pipeline CI/CD con GitHub Actions
-- Observabilidad y monitoreo
-- Migración a microservicios
-- Despliegue en AWS
-
 ---
 
 # 👨‍💻 Autor
 
 **Néstor Uyaguari**
 
-IT Project Manager | Technical Coordinator | Full-Stack Developer
-
-🔗 LinkedIn:  
-https://www.linkedin.com/in/alejandro-uyaguari-0807b318/
+IT Project Manager | Technical Coordinator | Software Engineer
 
 📍 Santiago, Chile
 
+💼 LinkedIn  
+https://www.linkedin.com/in/alejandro-uyaguari-0807b318/
+
+📫 Contacto  
+alejandro.uyaguari@outlook.cl
+
 ---
 
-## ⭐ Propósito del Proyecto
+## 🚀 Explora Mi Portafolio
 
-PetHealth forma parte de mi portafolio profesional y fue desarrollado para demostrar capacidades en arquitectura backend, modelado de dominio, diseño de APIs REST y buenas prácticas de ingeniería de software.
+PetHealth forma parte de mi portafolio profesional, donde comparto proyectos relacionados con desarrollo de software, arquitectura, integración de sistemas y liderazgo técnico.
 
-Si te interesa el proyecto o deseas conversar sobre oportunidades profesionales, estaré encantado de conectar.
+👤 **Portafolio GitHub**  
+https://github.com/AlejandroUyaguari
