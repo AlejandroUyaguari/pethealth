@@ -345,11 +345,5 @@ https://www.linkedin.com/in/alejandro-uyaguari-0807b318/
 📫 Contacto  
 alejandro.uyaguari@outlook.cl
 
----
-
-## 🚀 Explora Mi Portafolio
-
-PetHealth forma parte de mi portafolio profesional, donde comparto proyectos relacionados con desarrollo de software, arquitectura, integración de sistemas y liderazgo técnico.
-
 👤 **Portafolio GitHub**  
 https://github.com/AlejandroUyaguari
