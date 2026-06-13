@@ -304,12 +304,6 @@ cd pethealth
 mvn spring-boot:run
 ```
 
-### Compilar proyecto
-
-```bash
-mvn clean install
-```
-
 ---
 
 # 🔄 Flujo del Sistema
