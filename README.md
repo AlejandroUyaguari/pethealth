@@ -227,32 +227,6 @@ Respuestas JSON estandarizadas para todos los errores.
 
 ---
 
-# 📚 Documentación API
-
-La API incluye documentación automática mediante Swagger/OpenAPI.
-
-### Swagger Online
-
-https://pethealth-sa6d.onrender.com/swagger-ui/index.html
-
-> ⚠️ La aplicación está desplegada en Render Free Tier. La primera solicitud puede tardar algunos segundos mientras el servicio se activa.
-
-### Swagger Local
-
-```text
-http://localhost:8080/swagger-ui.html
-```
-
-Swagger permite:
-
-- Explorar endpoints
-- Ejecutar pruebas
-- Revisar modelos de datos
-- Validar request y response
-- Consultar códigos de error
-
----
-
 # 🛠️ Tecnologías Utilizadas
 
 ### Backend
@@ -303,6 +277,25 @@ cd pethealth
 ```bash
 mvn spring-boot:run
 ```
+
+---
+# 📚 Documentación API
+
+La API incluye documentación automática mediante Swagger/OpenAPI.
+
+### Swagger Local
+
+```text
+http://localhost:8080/swagger-ui.html
+```
+
+Swagger permite:
+
+- Explorar endpoints
+- Ejecutar pruebas
+- Revisar modelos de datos
+- Validar request y response
+- Consultar códigos de error
 
 ---
 
